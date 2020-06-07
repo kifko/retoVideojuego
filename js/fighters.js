@@ -5,14 +5,13 @@
 
 
 class Fighter {
-  constructor(nombre, atacar, defender, fuerza, agilidad, magia, vida) {
+  constructor(nombre, fuerza, ataque, defensa, agilidad, magia, vida) {
 
         this.nombre = nombre;
-        this.atacar = atacar;
-        this.defender = defender;
         this.fuerza = fuerza;
+        this.ataque = ataque;
+        this.defensa = defensa;
         this.agilidad = agilidad;
-        this.magia = magia;
         this.vida = 100;
     }
 
@@ -24,13 +23,13 @@ class Fighter {
         y un máximo de la suerte del enmigo
         */
 
-        let luck = funciones.random(1, enemigo.marketing);
+        let suerte = funciones.random(1, equipo2.agilidad);
 
         /*A continuación, depositamos en la variable hit, el resultado de primero restarle la defensa 
         del enemigo al luchador que emite el golpe, y posteriormente multiplicarlo por la variable luck
         obtenida antes.*/
 
-        let hit = (this.virus - enemigo.hackeo) * luck;
+        let ataque = (this.nombre - equipo2.defensa) * suerte;
 
 
         /*finalmente , restamos a la vida del enemigo el valor establecido en el golpe (hit)*/
@@ -38,7 +37,7 @@ class Fighter {
     }
 
     defender(){
-
+        let defensa
         
 
     }
@@ -57,15 +56,15 @@ class Fighter {
 
 //instanciamos a los luchadores 
 
-let f1 = new Fighter("ants",           4, 10, 20, 2, 2);
-let f2 = new Fighter("Kpiewdiepie",    3, 5, 12, 3, 3);
-let f3 = new Fighter("tesla",          2, 7, 15, 2, 2);
-let f4 = new Fighter("Greta-Thunberg", 2, 3, 10, 1, 2);
-let f5 = new Fighter("fmi",            3, 11, 22, 3, 3);
-let f6 = new Fighter("winnie",         4, 12, 3, 3, 4);
-let f7 = new Fighter("bill-gates",     2, 8, 17, 3, 2);
-let f8 = new Fighter("ameba",          2, 13, 10, 2, 5);
-let f9 = new Fighter("mascarilla",     3, 8, 12, 1, 1);
+let f1 = new Fighter("Hormigas",   4, 10, 20, 2);
+let f2 = new Fighter("piew",       3, 5, 12, 3);
+let f3 = new Fighter("Elon",       2, 7, 15, 2);
+let f4 = new Fighter("Greta",      2, 3, 10, 1);
+let f5 = new Fighter("Christine",  3, 11, 22, 3);
+let f6 = new Fighter("Winnie",     4, 12, 25, 3);
+let f7 = new Fighter("Bill",       2, 8, 17, 3);
+let f8 = new Fighter("Ameba",      2, 13, 10, 2);
+let f9 = new Fighter("Mascarilla", 3, 8, 12, 1);
 
 
 

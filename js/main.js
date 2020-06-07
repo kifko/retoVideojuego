@@ -18,6 +18,8 @@ let partida = {
         direccionar a la clase instanciada*/
       if (this.equipo1.length >= 2){
         this.escoge1 = false;
+      }else{
+        this.escoge2 = true;
       }
 
       this.equipo1.push(allplayers[idLuchador]);
