@@ -1,4 +1,14 @@
+body {
+    background-color: aquamarine;
+    margin: 1.2em;
+    padding: 1.2em;
+    border: 1em solid black;
+}
 
+h1 {
+    text-align: center;
+    justify-content: center;
+}
 
 .luchadores {
     display: flex;
@@ -7,13 +17,58 @@
 }
 
 .luchador img {
+    max-width: 100%;
     width: 10em;
     height: 10em;
     margin-left: 2em;
-    border: 1px solid red;
+	border: 1px solid red;
+    filter: grayscale(50%);
+    -webkit-animation: scaledown .4s ease;
+    animation: scaledown; .4s linear;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 50%;
+}
+
+.luchador img:hover {
+    filter: grayscale(0%);
+    -webkit-animation: scale .4s ease;
+    animation: scale .4s linear;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 50%;
+}
+
+@keyframes scaledown{
+    0%{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.0);
+    }
+    100%{
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+@keyframes scale{
+    0%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100%{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
 }
 
 p {
  text-align: center;
  margin-left: 2em;
+}
+
+.dt1 {
+	text-align: left;
+    margin-left: 2em;
+}
+.dt2 {
+    text-align: right;
+    margin-left: 2em;
+    margin-top: -1.2em;
 }

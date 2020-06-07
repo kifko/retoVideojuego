@@ -2,22 +2,18 @@
 
 //clase luchador, con sus propiedades y métodos.
 
+
+
 class Fighter {
-  constructor(name, virus, inmunidad, dislikes, likes, troleo, 
-    superpoblacion, hackeo, marketing, indigestion) {
+  constructor(nombre, atacar, defender, fuerza, agilidad, magia, vida) {
 
-        this.name = name;
-        this.virus = virus;
-        this.inmunidad = inmunidad;
-        this.dislikes = dislikes;
-        this.likes = likes;
-        this.troleo = troleo;
-        this.superpoblacion = superpoblacion;
-        this.hackeo = hackeo;
-        this.marketing = marketing;
-        this.indigestion = indigestion;
-        this.cordura = 100;
-
+        this.nombre = nombre;
+        this.atacar = atacar;
+        this.defender = defender;
+        this.fuerza = fuerza;
+        this.agilidad = agilidad;
+        this.magia = magia;
+        this.vida = 100;
     }
 
     atacar(enemigo){
@@ -41,7 +37,7 @@ class Fighter {
         enemigo.cordura -= hit;
     }
 
-    defenderse(){
+    defender(){
 
         
 
@@ -61,15 +57,16 @@ class Fighter {
 
 //instanciamos a los luchadores 
 
-let f1 = new Fighter("ants",           25, 40, 7, 2, 1, 3, 0, 2);
-let f2 = new Fighter("Kpiewdiepie",    30, 35, 2, 15, 3, 2, 9, 4);
-let f3 = new Fighter("tesla",          35, 30, 1, 13, 3, 2, 8, 3);
-let f4 = new Fighter("Greta-Thunberg", 15, 25, 4, 7, 2, 1, 6, 8);
-let f5 = new Fighter("fmi",            35, 30, 7, 2, 6, 2, 3, 0);
-let f6 = new Fighter("winnie",         40, 20, 3, 10, 6, 3, 9, 2);
-let f7 = new Fighter("bill-gates",     30, 35, 5, 3, 5, 1, 6, 0);
-let f8 = new Fighter("ameba",          10, 45, 6, 5, 0, 3, 2, 0);
-let f9 = new Fighter("bolsa",           5, 80, 3, 7, 6, 3, 7, 8, 3);
+let f1 = new Fighter("ants",           4, 10, 20, 2, 2);
+let f2 = new Fighter("Kpiewdiepie",    3, 5, 12, 3, 3);
+let f3 = new Fighter("tesla",          2, 7, 15, 2, 2);
+let f4 = new Fighter("Greta-Thunberg", 2, 3, 10, 1, 2);
+let f5 = new Fighter("fmi",            3, 11, 22, 3, 3);
+let f6 = new Fighter("winnie",         4, 12, 3, 3, 4);
+let f7 = new Fighter("bill-gates",     2, 8, 17, 3, 2);
+let f8 = new Fighter("ameba",          2, 13, 10, 2, 5);
+let f9 = new Fighter("mascarilla",     3, 8, 12, 1, 1);
+
 
 
 //traductor

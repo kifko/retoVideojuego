@@ -1,4 +1,6 @@
 
+
+
 let partida = {
 
   //propiedades
@@ -26,7 +28,7 @@ let partida = {
 
   escoge2(idLuchador){
     
-    if (this.equipo2.length >=2){
+    if (this.equipo2.length >= 2){
       this.escoge2 = false;
     }
 
@@ -34,6 +36,5 @@ let partida = {
       //repetiremos la operación del primer equipo, en este caso hemos de averiguar como 
       //hacerlo para no poder escoger luchadores repetidos. 
   },
-
 
 }
